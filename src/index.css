@@ -1,0 +1,54 @@
+/* Add this CSS to your stylesheet or a CSS-in-JS solution */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.status {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-row .square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #999;
+  background-color: #e0e0e0;
+}
+
+.board-row .square:hover {
+  background-color: #ddd;
+}
+
+.square.x {
+  color: #f00; /* Red color for 'X' */
+}
+
+.square.o {
+  color: #00f; /* Blue color for 'O' */
+}
